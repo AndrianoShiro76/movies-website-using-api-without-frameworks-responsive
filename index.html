@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Website Using API (without framework)</title>
+
+  <!-- CSS SWIPER (for Image Carosoul) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- CSSS CUSTOM -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+
+  <!-- ===== START NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-bar">
+      <a class="logo">My Movies</a>
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="index.html"><i class="uil uil-home"></i>Home</a>
+          <a href="movies.html"><i class="uil uil-film"></i>Genre</a>
+          <a href="anime.html"><i class="uil uil-clock"></i>Upcoming</a>
+          <a href="drama.html"><i class="uil uil-newspaper"></i>News</a>
+          <div class="search-box">
+            <input type="text" class="input-keyword" placeholder="Search movie...">
+            <div class="button-group">
+              <div class="search-button" type="button"><i class="uil uil-search"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>
+    </div>
+  </header>
+  <!-- ===== END NAVBAR ===== -->
+
+  <!-- ===== START HOME ===== -->
+  <section class="home">
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/image1.jpg" alt="image1">
+          <div class="text-content">
+            <h2 class="title">Transformers <span>Dark</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus, ipsum tempora sapiente
+              commodi, illum laboriosam corrupti a cumque numquam quod dolorum cum adipisci. Aspernatur cum velit at,
+              quia officia assumenda voluptate architecto delectus quisquam deserunt odio, facere beatae. Beatae at,
+              unde repellat perferendis sit quos recusandae quisquam omnis commodi.</p>
+            <div class="movie-content">
+              <span><i class="uil uil-calender"></i>2022</span>
+              <span><i class="uil uil-clock"></i>120 min</span>
+              <span><i class="uil uil-film"></i>Action, Comedy</span>
+            </div>
+            <div class="button">
+              <button class="btn">Trailer <i class="uil uil-arrow-right"></i></button>
+              <button class="btn">Movie <i class="uil uil-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="img/image2.jpg" alt="image2">
+          <div class="text-content">
+            <h2 class="title">Fast and Forious <span>X</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ad nobis ipsam expedita assumenda
+              consequuntur, et ducimus obcaecati quis consectetur exercitationem iste? Ab, minima tempora! Officia
+              eligendi soluta architecto accusantium magni, temporibus, doloremque consequatur animi tenetur a illo
+              cupiditate blanditiis!</p>
+            <div class="movie-content">
+              <span><i class="uil uil-calender"></i>2022</span>
+              <span><i class="uil uil-clock"></i>120 min</span>
+              <span><i class="uil uil-film"></i>Action, Horor</span>
+            </div>
+            <div class="button">
+              <button class="btn">Trailer <i class="uil uil-arrow-right"></i></button>
+              <button class="btn">Movie <i class="uil uil-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="img/image3.jpg" alt="image3">
+          <div class="text-content">
+            <h2 class="title">Spiderman <span>Far From Home</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa labore totam aperiam exercitationem
+              repudiandae dolore neque veritatis iusto, vero quis quo obcaecati voluptatum hic velit fuga, veniam
+              adipisci, atque incidunt.</p>
+            <div class="movie-content">
+              <span><i class="uil uil-calender"></i>2022</span>
+              <span><i class="uil uil-clock"></i>120 min</span>
+              <span><i class="uil uil-film"></i>Action, Comedy</span>
+            </div>
+            <div class="button">
+              <button class="btn">Trailer <i class="uil uil-arrow-right"></i></button>
+              <button class="btn">Movie <i class="uil uil-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbs -->
+    <div class="bg-slider-thumbs">
+      <div class="swiper-wrapper thumbs-container">
+        <img src="img/image1.jpg" alt="" class="swiper-slide">
+        <img src="img/image2.jpg" alt="" class="swiper-slide">
+        <img src="img/image3.jpg" alt="" class="swiper-slide">
+      </div>
+    </div>
+  </section>
+  <!-- ===== END HOME ===== -->
+
+  <!-- ===== START DETAIL MOVIES ===== -->
+  <section class="detail">
+    <div class="container">
+      <div class="title-detail">
+
+      </div>
+      <div class="body-detail">
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== END DETAIL MOVIES ===== -->
+
+  <!-- ===== START SEARCH ===== -->
+  <section class="search">
+    <div class="container">
+      <div class="title-search">
+
+      </div>
+      <div class="body-search">
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== END SEARCH ===== -->
+
+  <!-- ===== START POPULAR ===== -->
+  <section class="popular">
+    <div class="container">
+      <div class="title-section">
+        <h3>POPULAR</h3>
+        <hr>
+      </div>
+      <div class="body-section">
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== END POPULAR ===== -->
+
+  <!-- ===== START POPULAR ===== -->
+  <section class="top">
+    <div class="container">
+      <div class="title-section">
+        <h3>TOP RATING</h3>
+        <hr>
+      </div>
+      <div class="body-top">
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== END POPULAR ===== -->
+
+
+  <!-- ===== START UPCOMING ===== -->
+  <section class="upcoming">
+    <div class="container">
+      <div class="image-upcoming">
+        <img src="img/image5.jpg" alt="">
+      </div>
+      <div class="text-content">
+        <h4>Upcoming</h4>
+        <h2 class="title">Dilan 1990 Bandung </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus, ipsum tempora sapiente
+          commodi, illum laboriosam corrupti a cumque numquam quod dolorum cum adipisci. Aspernatur cum velit at,
+          quia officia assumenda voluptate architecto delectus quisquam deserunt odio, facere beatae. Beatae at,
+          unde repellat perferendis sit quos recusandae quisquam omnis commodi.</p>
+        <div class="movie-content">
+          <span><i class="uil uil-calender"></i>2022</span>
+          <span><i class="uil uil-clock"></i>120 min</span>
+          <span><i class="uil uil-film"></i>Action, Comedy</span>
+        </div>
+        <button class="btn">Trailer <i class="uil uil-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <!-- ===== END UPCOMING ===== -->
+
+
+  <!-- ===== START GENRE ===== -->
+  <section class="genre">
+    <div class="container">
+      <div class="title-section">
+        <h3>Genre</h3>
+        <hr>
+      </div>
+      <div class="body-section">
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/adventure.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Adventure</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/romance.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Romance</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/horor.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Horror</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/comedy.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Comedy</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/action.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Action</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/animation.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Animation</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/war.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>War</h2>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="thumbnail-image">
+            <img src="img/fantacy.jpg" alt="">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Fantasy</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== END GENRE ===== -->
+
+  <!-- ===== START FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-upper">
+        <div class="container-item">
+          <h3>My Movies</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptate qui architecto accusamus
+            accusantium rem id maiores harum molestiae voluptates!</p>
+        </div>
+        <div class="container-item">
+          <h4>Menu</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="movies.html">Movies</a></p>
+          <p><a href="anime.html">Anime</a></p>
+          <p><a href="drama.html">Drama</a></p>
+          <p><a href="drama.html">Contact</a></p>
+        </div>
+        <div class="container-item">
+          <h4>Category</h4>
+          <p><a href="#">Upcoming</a></p>
+          <p><a href="#">New</a></p>
+          <p><a href="#">Popular</a></p>
+        </div>
+        <div class="container-item">
+          <h4>Contact</h4>
+          <p><a href="#">0812 2345 6789</a></p>
+          <p><a href="#">cs@my-movie.com</a></p>
+          <div class="medsos">
+            <a href=""><i class="uil uil-instagram-alt"></i></a>
+            <a href=""><i class="uil uil-facebook"></i></a>
+            <a href=""><i class="uil uil-youtube"></i></a>
+            <a href=""><i class="uil uil-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-lower">
+        <div>
+          <p>My Movies @ 2023 - All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== END FOOTER ===== -->
+
+
+  <!-- JAVASCRIPT SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- JAVASCRIPT CUSTOM -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
